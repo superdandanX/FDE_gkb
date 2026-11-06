@@ -1,0 +1,153 @@
+{
+  "contract_version": "w01-0.2.1",
+  "product_version": "0.2.0-w1",
+  "capability_matrix_version": "w1-capabilities-0.2.0",
+  "items": [
+    {
+      "id": "GAP-001",
+      "request": "复购率停止下滑并回升（连续四个季度下滑），提升幅度与口径待定",
+      "category": "产品缺口",
+      "capability_ids": [
+        "CAP-006"
+      ],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "01_沈总立项邮件.md",
+          "locator": "正文第 1 段",
+          "note": "沈总称复购率连续四个季度下滑，属发起人陈述，未附数据。"
+        },
+        {
+          "source": "02_公司与项目协作关系.md",
+          "locator": "第 3 段",
+          "note": "公司简介同样记载复购率连续四季度下滑，与邮件同源，未独立核实。"
+        },
+        {
+          "source": "docs/w01/interview-transcript.json",
+          "locator": "MSG-04015、MSG-04017",
+          "note": "沈总确认目标是复购止跌回升；提升幅度与计算口径未定。"
+        }
+      ],
+      "next_step": "找小林确认复购率口径、分母、统计人与近四季度数据；找王经理确认董事会期限与验收；据此判断需新增指标还是可用净消费下降近似。"
+    },
+    {
+      "id": "GAP-002",
+      "request": "判断会员老化是复购下滑的主要原因",
+      "category": "待判断",
+      "capability_ids": [],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "01_沈总立项邮件.md",
+          "locator": "正文第 2 段",
+          "note": "“会员老化比较明显”是沈总个人判断，未给数据或分析依据。"
+        },
+        {
+          "source": "docs/w01/interview-transcript.json",
+          "locator": "MSG-04015、MSG-04032",
+          "note": "沈总明确“会员老化”需小林、老周用数据核实，本人不能确认。"
+        }
+      ],
+      "next_step": "找小林、老周用会员入会时间与分层复购数据验证“老化”假设；结果决定是否需要会员分层能力。"
+    },
+    {
+      "id": "GAP-003",
+      "request": "在约 80 万活跃会员中识别需要重点经营的会员",
+      "category": "产品已有",
+      "capability_ids": [
+        "CAP-003",
+        "CAP-004"
+      ],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "01_沈总立项邮件.md",
+          "locator": "正文第 2 段",
+          "note": "沈总称有 80 万活跃会员，希望助手识别需要重点经营的人。"
+        },
+        {
+          "source": "artifacts/w01/evidence/analysis.json",
+          "locator": "compare_spending 结果 declining_members",
+          "note": "样例数据可输出 M001/M004/M007 下降名单，证明能力存在；不代表青禾数据已接入。"
+        },
+        {
+          "source": "docs/w01/interview-transcript.json",
+          "locator": "MSG-04015",
+          "note": "系统条件找老周、运营数据与口径找小林；未给出 80 万口径。"
+        }
+      ],
+      "next_step": "找老周确认会员/订单数据可导出范围与 80 万口径；找小林确认“重点经营”定义；用抽样数据复跑名单。"
+    },
+    {
+      "id": "GAP-004",
+      "request": "识别后直接给运营人员可执行的建议，不额外整理表格",
+      "category": "产品已有",
+      "capability_ids": [
+        "CAP-001",
+        "CAP-003"
+      ],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "01_沈总立项邮件.md",
+          "locator": "正文第 2 段",
+          "note": "沈总希望直接给小林运营建议，不要再多整理一套表。"
+        },
+        {
+          "source": "artifacts/w01/evidence/refund_explanation.json",
+          "locator": "result.recommendations",
+          "note": "样例中已为每位下降会员生成建议与金额依据，建议质量仍需业务评审。"
+        },
+        {
+          "source": "docs/w01/interview-transcript.json",
+          "locator": "MSG-04017",
+          "note": "当前应对动作“小林更清楚”，沈总不能替运营确认工作流。"
+        }
+      ],
+      "next_step": "找小林确认当前运营动作、建议字段与工作流；用样例建议做一次可用性评审。"
+    },
+    {
+      "id": "GAP-005",
+      "request": "希望三个月看到效果并向董事会交代（董事会期限未确认）",
+      "category": "暂不承诺",
+      "capability_ids": [],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "01_沈总立项邮件.md",
+          "locator": "正文第 1 段",
+          "note": "“三个月能看到效果”是沈总对董事会的交代，未定义指标、基线与验收。"
+        },
+        {
+          "source": "docs/w01/interview-transcript.json",
+          "locator": "MSG-04015、MSG-04038",
+          "note": "三个月是期望；董事会是否有更硬期限不能确认。"
+        }
+      ],
+      "next_step": "找王经理确认董事会期限、预算与验收方式；访谈已确认三个月是期望，签约前仍不承诺时间与幅度。"
+    },
+    {
+      "id": "GAP-006",
+      "request": "接入青禾会员、订单、门店数据与现有系统",
+      "category": "系统适配",
+      "capability_ids": [
+        "CAP-004",
+        "CAP-006"
+      ],
+      "evidence_status": "unknown",
+      "evidence": [
+        {
+          "source": "02_公司与项目协作关系.md",
+          "locator": "第 4 段",
+          "note": "明确产品尚未接入青禾数据与系统，本周无完整会员明细、指标定义与预算。"
+        },
+        {
+          "source": "docs/w01/interview-transcript.json",
+          "locator": "MSG-04015、MSG-04024",
+          "note": "系统条件指向老周；预算与审批流程、最终签字人均不能确认。"
+        }
+      ],
+      "next_step": "找老周确认数据表、字段、覆盖范围、访问方式与脱敏要求；先做只读抽样验证（沈总不掌握系统条件）。"
+    }
+  ]
+}

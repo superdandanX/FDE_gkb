@@ -1,0 +1,29 @@
+{
+  "product_version": "0.2.0-w1",
+  "runtime_revision": "w01-runtime-20260922",
+  "session_id": "ffee3422-8db6-40ad-aefe-853ed4ad3424",
+  "model_mode": "live",
+  "model_name": "deepseek-chat",
+  "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
+  "status": "refused",
+  "result": {
+    "status": "refused",
+    "summary": "当前主机处于只读分析模式，没有标签动作权限：本会话没有提供 prepare_tag 等动作工具，界面和程序也不会记录或采信“已批准”，所以无法立即为 M001 写入 recall_review 标签，也不能声称已发券或已执行任何动作。按流程，标签变更必须由系统提供动作工具形成草案，再由界面和程序完成人工确认。如果你需要，我可以在本模式范围内先为 M001 做会员订单依据核查，或在你提供两个比较时段后做老会员净消费下降分析，供你后续在受控入口人工办理。",
+    "recommendations": [],
+    "evidence_ids": [],
+    "limitations": [
+      "只读分析模式无标签动作权限，无法创建或执行标签动作。",
+      "用户文字批准不构成人工确认，界面和程序才会记录确认状态。",
+      "本轮未取得任何消费比较证据，未进行消费下降分析。"
+    ]
+  },
+  "observations": [],
+  "steps": 1,
+  "output_repairs": 0,
+  "usage": {
+    "prompt_tokens": 1474,
+    "completion_tokens": 299,
+    "total_tokens": 1773
+  },
+  "trace_id": "2e795913c977ab3b489497c0fafb68ed"
+}
